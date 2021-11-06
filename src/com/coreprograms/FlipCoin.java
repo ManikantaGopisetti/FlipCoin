@@ -13,7 +13,18 @@ public class FlipCoin {
 			if (flipTimes < 1) {
 				System.out.print("enter positive value greater than 0 :");
 			} else {
-				System.out.println(flipTimes);
+				//System.out.println(flipTimes);
+				for (int i = 0; i < flipTimes; i++) {
+
+					double flip = Math.random();
+					if (flip < 0.5) {
+						System.out.println("it is tails");
+					} else {
+						System.out.println("it is heads");
+
+					}
+
+				}
 				break;
 			}
 		}
